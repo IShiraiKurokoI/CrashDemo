@@ -1,0 +1,30 @@
+<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Page
+    x:Class="CrashDemo.Pages.CrashPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CrashDemo.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:labs="using:WinUICommunity.SettingsUI.SettingsControls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="20">
+        <StackPanel>
+            <labs:SettingsCard Description="This is a default card, with the Header, HeaderIcon, Description and Content set."
+                               Header="This is the Header">
+                <labs:SettingsCard.HeaderIcon>
+                    <FontIcon Glyph="&#xE799;" />
+                </labs:SettingsCard.HeaderIcon>
+                <ComboBox SelectedIndex="0">
+                    <ComboBoxItem>Option 1</ComboBoxItem>
+                    <ComboBoxItem>Option 2</ComboBoxItem>
+                    <ComboBoxItem>Option 3</ComboBoxItem>
+                </ComboBox>
+            </labs:SettingsCard>
+        </StackPanel>
+    </Grid>
+</Page>

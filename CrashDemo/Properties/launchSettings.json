@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CrashDemo (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "CrashDemo (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
